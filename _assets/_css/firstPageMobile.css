@@ -1,0 +1,181 @@
+@media (max-width: 480px) {
+  body {
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    -ms-grid-rows: 8.482vh auto;
+        grid-template-rows: 8.482vh auto;
+  }
+  .header {
+    background-image: linear-gradient(95deg, #00bcfd -4%, #23d2b5 99%);
+    border-radius: 0 0 18px 18px;
+    padding: 20px 12px 16px 12px;
+    outline: none;
+    width: 100%;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    color: #FFF;
+  }
+  .header .site-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFF;
+  }
+  .header .site-title .ham-burger {
+    cursor: pointer;
+    display: block;
+    margin-right: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .header select {
+    opacity: 0;
+    font-size: 13px;
+  }
+  .header .select-wraper {
+    width: 71px;
+    height: 34px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-right: 8px;
+  }
+  .header .select-wraper i {
+    left: 9px;
+    font-size: 20px;
+  }
+  .header .select-wraper::after {
+    color: #FFF;
+    right: 6px;
+  }
+  .header .select-wraper #select-1 {
+    padding-left: unset;
+  }
+  .header .widget-bar > i {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .widget-bar > i::after {
+    top: 4px;
+    right: 4px;
+  }
+  .noti-wraper {
+    right: unset;
+    top: unset;
+    width: 100%;
+    height: calc(100vh - 8.482vh);
+    background-color: #eff0f2;
+    background-image: url("../_img/main-footer-image.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    top: 60px;
+  }
+  .noti-wraper::before {
+    border-width: 0;
+  }
+  .noti-wraper li {
+    background-color: #fff;
+    margin: 12px;
+    border-radius: 5px;
+  }
+  .menu-wraper {
+    display: none;
+    grid-row: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+  }
+  .menu-wraper ul div {
+    display: block;
+    margin: 19.5px 0;
+    padding: 19.5px 0;
+    border-top: 1px solid #E7E9EC;
+    border-bottom: 1px solid #E7E9EC;
+  }
+  .menu-wraper .menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    bottom: 22px;
+    left: 17%;
+  }
+  .menu-wraper li {
+    width: 289px;
+    margin: unset !important;
+    padding: unset !important;
+    border: unset !important;
+  }
+  .menu .close {
+    color: #FFF;
+    display: unset;
+    position: absolute;
+    right: 12px;
+    top: 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .main-content {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding: 23px 13px 100px 12px;
+    -ms-grid-columns: 49.375vw auto;
+        grid-template-columns: 49.375vw auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+    grid-column-gap: 12px;
+    grid-row-gap: 28px;
+  }
+  .main-content .chart-wraper {
+    grid-row: span 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .main-content .chart-wraper img {
+    width: 100%;
+  }
+  .main-content .chart-wraper .analyt-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: unset;
+  }
+  .main-content .chart-wraper .analyt-content ul {
+    margin-top: 15.8px;
+  }
+  .main-content .map-wraper {
+    grid-column: 1/-1;
+  }
+}
+/*# sourceMappingURL=firstPageMobile.css.map */
