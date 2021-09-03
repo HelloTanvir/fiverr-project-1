@@ -1,159 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tableau de bord</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="_assets/_css/firstPageStyle.css">
-    <link rel="stylesheet" href="_assets/_css/firstPageMobile.css">
-    <link rel="stylesheet" href="_assets/_css/firstPageTablet.css">
-    <link rel="stylesheet" href="_assets/_css/shadowOnPage.css">
+    <link rel="stylesheet" href="assets/css/firstPageStyle.css" />
+    <link rel="stylesheet" href="assets/css/firstPageMobile.css" />
+    <link rel="stylesheet" href="assets/css/firstPageTablet.css" />
+    <link rel="stylesheet" href="assets/css/shadowOnPage.css" />
 
-    <script src="_assets/_js/script.js" defer></script>
-</head>
+    <script src="assets/js/script.js" defer></script>
+  </head>
 
-<body>
-
+  <body>
     <div id="shadow"></div>
 
     <div class="header">
+      <div class="site-title">
+        <i class="ri-menu-4-line ham-burger" id="ham-burger"></i> Tableau de
+        bord
+      </div>
 
-        <div class="site-title"><i class="ri-menu-4-line ham-burger" id="ham-burger"></i> Tableau de bord</div>
-
-        <div class="widget-bar">
-            <div class="select-wraper">
-                <i class="ri-building-2-line"></i>
-                <select name="select-1" id="select-1">
-                    <option value="Tous les réseaux">Tous les réseaux</option>
-                    <option value="Tous les réseaux (2)">Tous les réseaux (2)</option>
-                    <option value="Tous les réseaux (3)">Tous les réseaux (3)</option>
-                    <option value="Tous les réseaux (4)">Tous les réseaux (4)</option>
-                </select>
-            </div>
-            <i class="ri-notification-3-line bell-bubble" id="bell"></i>
-
+      <div class="widget-bar">
+        <div class="select-wraper">
+          <i class="ri-building-2-line"></i>
+          <select name="select-1" id="select-1">
+            <option value="Tous les réseaux">Tous les réseaux</option>
+            <option value="Tous les réseaux (2)">Tous les réseaux (2)</option>
+            <option value="Tous les réseaux (3)">Tous les réseaux (3)</option>
+            <option value="Tous les réseaux (4)">Tous les réseaux (4)</option>
+          </select>
         </div>
-
-
+        <i class="ri-notification-3-line bell-bubble" id="bell"></i>
+      </div>
     </div>
 
     <div class="noti-wraper" id="noti-wraper">
-        <ul>
-            <li class="not-seen">
-                Notification dolor sit amet, consectetur adipiscing elit, sed do.
-                <span>Il y a 2 h</span>
-            </li>
-            <li class="not-seen">
-                Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud.
-                <span>Il y a 1 j</span>
-            </li>
-            <li>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                <span>Il y a 2 j</span>
-            </li>
-            <li>
-                Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.
-                <span>Il y a 3 j</span>
-            </li>
-        </ul>
+      <ul>
+        <li class="not-seen">
+          Notification dolor sit amet, consectetur adipiscing elit, sed do.
+          <span>Il y a 2 h</span>
+        </li>
+        <li class="not-seen">
+          Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, nostrud.
+          <span>Il y a 1 j</span>
+        </li>
+        <li>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+          <span>Il y a 2 j</span>
+        </li>
+        <li>
+          Dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat no.
+          <span>Il y a 3 j</span>
+        </li>
+      </ul>
     </div>
-    
 
     <div class="menu-wraper">
+      <div class="menu">
+        <i class="ri-close-line close" id="close"></i>
+        <img src="assets/img/site-logo.png" alt="" class="site-logo" />
 
-        <div class="menu">
-            <i class="ri-close-line close" id="close"></i>
-            <img src="_assets/_img/site-logo.png" alt="" class="site-logo">
-
-            <div class="menu-items">
-                <ul>
-                    <li><a href="#" class="active"><span><i class="ri-apps-line"></i></span>Tableau de bord</a></li>
-                    <li><a href="#"><span><i class="ri-lightbulb-line"></i></span>Mix énergétique</a></li>
-                    <li><a href="#"><span><i class="ri-leaf-line"></i></span>Simulation CO²</a></li>
-                    <li><a href="#"><span><i class="ri-sun-line"></i></span>Éco-gestes</a></li>
-                    <li><a href="#"><span><i class="ri-settings-3-line"></i></span>Comment ça marche ?</a></li>
-                    <li><a href="#"><span><i class="ri-information-line"></i></span>ENGIE Direct</a></li>
-                    <li><a href="#"><span><i class="ri-newspaper-line"></i></span>Actualités</a></li>
-                    <div><li><a href="#"><span><i class="ri-notification-3-line"></i></span>Notifications</a></li></div>
-                    <li><a href="#"><span><i class="ri-login-box-line"></i></span>Déconnexion</a></li>
-                </ul>
+        <div class="menu-items">
+          <ul>
+            <li>
+              <a href="#" class="active"
+                ><span><i class="ri-apps-line"></i></span>Tableau de bord</a
+              >
+            </li>
+            <li>
+              <a href="./secondPage.html"
+                ><span><i class="ri-lightbulb-line"></i></span>Mix
+                énergétique</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-leaf-line"></i></span>Simulation CO²</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-sun-line"></i></span>Éco-gestes</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-settings-3-line"></i></span>Comment ça
+                marche ?</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-information-line"></i></span>ENGIE Direct</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-newspaper-line"></i></span>Actualités</a
+              >
+            </li>
+            <div>
+              <li>
+                <a href="#"
+                  ><span><i class="ri-notification-3-line"></i></span
+                  >Notifications</a
+                >
+              </li>
             </div>
+            <li>
+              <a href="#"
+                ><span><i class="ri-login-box-line"></i></span>Déconnexion</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="menu-footer">
-            Copyright 2020, Engie Solutions,<span> Tous droits réservés</span>
-        </div>
-
+      <div class="menu-footer">
+        Copyright 2020, Engie Solutions,<span> Tous droits réservés</span>
+      </div>
     </div>
 
     <div class="main-content">
-
-        <div class="chart-wraper">
-
-            <div class="analyt-header">
-                <div>Mix énergétique</div>
-                <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
-            </div>
-
-            <div class="analyt-content">
-                <img src="_assets/_img/column-chart.png" alt="">
-
-                <ul>
-                    <li>Fossile <span>: 45,1%</span></li>
-                    <li>Éolien <span>: 22,6%</span></li>
-                    <li>SolairE <span>: 15,0%</span></li>
-                    <li>BioÉnergie <span>: 13,5%</span></li>
-                    <li>Autre ENR <span>: 3,8%</span></li>
-                </ul>
-            </div>
-
+      <div class="chart-wraper">
+        <div class="analyt-header">
+          <div>Mix énergétique</div>
+          <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
         </div>
 
-        <div class="first-box">
+        <div class="analyt-content">
+          <img src="assets/img/column-chart.png" alt="" />
 
-            <div class="analyt-header">
-                <div>CO²</div>
-                <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
-            </div>
+          <ul>
+            <li>Fossile <span>: 45,1%</span></li>
+            <li>Éolien <span>: 22,6%</span></li>
+            <li>SolairE <span>: 15,0%</span></li>
+            <li>BioÉnergie <span>: 13,5%</span></li>
+            <li>Autre ENR <span>: 3,8%</span></li>
+          </ul>
+        </div>
+      </div>
 
-            <div><span class="ico-analyt"><i class="ri-lungs-line"></i></span>5,500</div>
-
-            <div>Tonnes de CO² économisé en 1 an</div>
-
+      <div class="first-box">
+        <div class="analyt-header">
+          <div>CO²</div>
+          <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
         </div>
 
-        <div class="second-box">
-
-            <div class="analyt-header">
-                <div>Ma conso</div>
-                <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
-            </div>
-
-            <div><span class="ico-analyt"><i class="ri-lightbulb-flash-line"></i></span>63.900</div>
-
-            <div>GWh produits</div>
-
+        <div>
+          <span class="ico-analyt"><i class="ri-lungs-line"></i></span>5,500
         </div>
 
-        <div class="map-wraper">
+        <div>Tonnes de CO² économisé en 1 an</div>
+      </div>
 
-            <div class="map-header">
-				<div>Mon parc</div>
-				<button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
-            </div>
-            
-            <div class="map-content">
-                <img src="_assets/_img/map.svg" alt="" width="100%">
-            </div>
-
+      <div class="second-box">
+        <div class="analyt-header">
+          <div>Ma conso</div>
+          <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
         </div>
 
+        <div>
+          <span class="ico-analyt"><i class="ri-lightbulb-flash-line"></i></span
+          >63.900
+        </div>
+
+        <div>GWh produits</div>
+      </div>
+
+      <div class="map-wraper">
+        <div class="map-header">
+          <div>Mon parc</div>
+          <button>Voir plus<i class="ri-arrow-right-s-line"></i></button>
+        </div>
+
+        <div class="map-content">
+          <img src="assets/img/map.svg" alt="" width="100%" />
+        </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
